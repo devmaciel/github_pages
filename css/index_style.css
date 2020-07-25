@@ -1,0 +1,154 @@
+/* BOOT */
+:root {
+	font-size: 16px;
+	color: white;
+	font-family: 'Sora', sans-serif;
+	--text-primary:#92D44A;
+	--text-secondary:#7FA1CD;
+	--bg-primary:;
+	--bg-secondary:;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+	background:black;
+}
+
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+
+.container{
+	max-width: 1280px;
+	padding:0 2%;
+	margin:0 auto;
+}
+
+.w50{
+	/*padding:0 10px;*/
+	width: 50%;
+}
+
+.left{float: left;}
+.right{float: right;}
+
+.clearfix{clear: both;}
+
+/*==========================================*/
+/* NAV-MENU */
+.mobile{display: none;}
+
+header{
+	padding:15px 0;
+	background: #111;
+}
+
+.logo a{
+	text-decoration: none;
+	color:var(--text-secondary); 
+}
+
+.logo a > i{
+	color: var(--text-primary);
+}
+
+nav{position: relative;}
+nav.desktop ul{list-style-type: none;}
+nav.desktop li{
+	margin: 0 20px;
+	display: inline-block;
+}
+
+nav.desktop a{
+	/*position: relative;*/
+    text-decoration: none;
+    color: white;
+}
+
+nav #marker{
+    position: absolute;
+    left: 0;
+    height: 2px;
+    bottom: -2px;
+    width: 0; 
+    background: white;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar {
+width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+background: var(--text-primary);
+}
+
+/*==========================================*/
+/* BANNER */
+/*.banner-container{
+	background-color: gray;
+	height: 500px;
+	width: 100%;
+}*/
+
+.bg-banner{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 20;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 20;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.7); 
+}
+
+.about{
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	/*max-width: 600px; */
+/*	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);*/
+	/*background-color: red;*/
+	
+}
+
+div.about .perfil{
+	padding: 100px 50px;
+}
+
+div.about .social-icons a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+div.about .social-icons{
+	display: block;
+	padding: 100px 40px;
+}
+
