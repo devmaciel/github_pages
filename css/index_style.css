@@ -5,6 +5,7 @@
 	font-family: 'Sora', sans-serif;
 	--text-primary:#92D44A;
 	--text-secondary:#7FA1CD;
+	--text-card:#2c3e50;
 	--bg-primary:;
 	--bg-secondary:;
 }
@@ -17,7 +18,7 @@
 
 html,body{
 	height: 100%;
-	background:black;
+	/* background:black; */
 }
 
 .text-right{text-align: right;}
@@ -109,7 +110,7 @@ background: var(--text-primary);
 	top: 20;
 	z-index: 1;
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	background-size: cover;
 	background-position: center;
 }
@@ -124,16 +125,17 @@ background: var(--text-primary);
 	background-color: rgba(0,0,0,0.7); 
 }
 
-.about{
+/*==========================================*/
+/* CARD */
+/* .about{
 	position: absolute;
 	z-index: 3;
 	width: 100%;
-	/*max-width: 600px; */
-/*	left: 50%;
+	left: 50%;
 	top: 50%;
 	transform:translate(-50%,-50%);
-	-ms-transform:translate(-50%,-50%);*/
-	/*background-color: red;*/
+	-ms-transform:translate(-50%,-50%);
+	background-color: red;
 	
 }
 
@@ -150,5 +152,94 @@ div.about .social-icons a{
 div.about .social-icons{
 	display: block;
 	padding: 100px 40px;
+} */
+
+.sec-card{
+	z-index: 3;
+	position: absolute;
+	top: 100px;
+	color: black;
 }
 
+.middle{
+	position: relative;
+	/* top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); */
+}
+
+.card{
+	cursor: pointer;
+	width: 300px;
+	height: 380px;
+	/* -webkit-box-shadow: -6px -21px 201px -36px rgba(163,163,163,1);
+	-moz-box-shadow: -6px -21px 201px -36px rgba(163,163,163,1);
+	box-shadow: -6px -21px 201px -36px rgba(163,163,163,1); */
+}
+
+.front, .back{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	transition: transform .6s linear;
+}
+
+.front img{
+	height: 100%;
+}
+
+.front{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+.back{
+	background: #f1f1f1;
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content{
+	color: var(--text-card);
+	text-align: center;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.sm{
+	margin: 20px 0;
+}
+
+.sm a{
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	color: #2c3e50;
+	font-size: 18px;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+.sm a:hover{
+	background: var(--text-card);
+	color: white;;
+}
+
+.card:hover > .front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+.section2{
+	padding: 300px;
+	width: 300px;
+	height: 300px;
+	background-color: red;
+}
