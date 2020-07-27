@@ -1,0 +1,33 @@
+@media screen and (max-width: 1024px){
+    .sec-card{
+        left: 20px;
+    }
+
+    .chamada1
+}
+
+@media screen and (max-width: 768px){
+    .w50{
+       width: 100%;
+       /* display: inline; */
+    }
+    .card{
+        display: none;
+    }
+
+    .chamada1{
+        position: absolute;
+        float: none;
+        padding: 0 20px;
+        margin: 150px auto;
+        text-align: center;
+    }
+
+    .desktop{display: none;}
+    .mobile{display: block;}
+
+    header .logo{
+		position: relative;
+		top: 5px;
+	}
+}

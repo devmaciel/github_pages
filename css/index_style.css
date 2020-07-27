@@ -19,12 +19,15 @@ html,body{
 	/* background:black; */
 }
 
+body{overflow-x: hidden;}
+
 .container{
 	max-width: 1280px;
 	padding:0 2%;
 	margin:0 auto;
 }
 
+.w50{width: 50%;}
 .left{float: left;}
 .right{float: right;}
 
@@ -32,7 +35,13 @@ html,body{
 
 /*==========================================*/
 /* NAV-MENU */
-.mobile{display: none;}
+.mobile{
+	display: none;
+	width: 100%;
+	text-align: right;
+	top: -20px;
+	margin-bottom: -20px;
+}
 
 header{
 	padding:15px 0;
@@ -73,6 +82,39 @@ nav #marker{
     border-radius: 4px;
 }
 
+.botao-menu-mobile{
+	font-size: 24px;
+	cursor: pointer;
+	color: white;
+}
+
+.mobile ul{
+	top:40px;
+	z-index: 999;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	display: none;
+	text-align: center;
+
+}
+
+.mobile li{
+	font-weight: 300;
+	width: 100%;
+	max-width: 700px;
+	display: block;
+	background: white;
+	border-bottom:1px solid #ccc;
+	font-size: 17px;
+	padding:8px 0;
+}
+.mobile li a{
+	display: block;
+	color: #444;
+	text-decoration: none;
+}
+
 body::-webkit-scrollbar {
 width: 0.25rem;
 }
@@ -87,6 +129,7 @@ background: var(--text-primary);
 
 /*==========================================*/
 /* BANNER */
+.banner-container{width: 100%;height: 100%;max-height: 667px; }
 .bg-banner{
 	display: block;
 	position: absolute;
@@ -105,7 +148,8 @@ background: var(--text-primary);
 	left: 0;
 	top: 20;
 	width: 100%;
-	height: 667px;
+	height: 100%;
+	max-height: 667px; 
 	z-index: 2;
 	background-color: rgba(0,0,0,0.7); 
 }
@@ -115,8 +159,9 @@ background: var(--text-primary);
 	z-index: 999;
 	color: white;
 	max-width: 600px;
+	/* max-height: 100%; */
 	float: right;
-	margin: 200px 50px;
+	margin: 150px 50px;
 	padding: 8px;
 	/*background-color:rgba(20,20,20,1);*/
 }
@@ -166,6 +211,7 @@ div.about .social-icons{
 	z-index: 3;
 	position: absolute;
 	top: 100px;
+	left: 60px;
 	color: black;
 }
 
@@ -249,7 +295,6 @@ div.about .social-icons{
 /* FOOTER */
 footer{
 	position: relative;
-	top: 20px;
 	z-index: 4;
 	background-color: black;
 	padding: 15px 0;
