@@ -2,6 +2,10 @@
     .sec-card{
         left: 20px;
     }
+
+    .sobre-mim-desc,.right-side span{
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -27,5 +31,22 @@
     header .logo{
 		position: relative;
 		top: 5px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .container2 {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .right-side{
+        margin: 0 auto;
+    }
+
+    .left-side img {
+        margin-top: 10px;
     }
 }
