@@ -35,6 +35,9 @@
 }
 
 @media screen and (max-width: 750px){
+    .chamada1{
+        margin: 150px auto;
+    }
     .container2 {
         position: relative;
         flex-direction: column;
@@ -57,5 +60,11 @@
 
     .right-side span {
         margin-left: 113px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    :root {
+        font-family: 'Times New Roman', Times, serif;
     }
 }
