@@ -485,9 +485,10 @@ footer p{
 	justify-content: center;
 	align-items: center;
 	background: #f1f1f1;
-	font-family: ;
+	/* font-family: ; */
 	/* background: #7FA1CD; */
 }
+
 
 .portfolio > .container {
 	position: relative;
@@ -543,11 +544,17 @@ footer p{
 	transition: 0.3s ease-in-out;
 }
 
+.card-portfolio .content a{
+	text-decoration: underline;
+	color: black;
+}
+
 .card-portfolio:hover .content {
 	visibility: visible;
 	opacity: 1;
 	margin-top: -40px;
 	transition-delay: 0.3s;
 }
+
 
 
