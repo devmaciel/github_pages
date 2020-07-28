@@ -177,6 +177,12 @@ background: var(--text-primary);
 	color: white;
 	margin-top: 10px;
 }
+
+.chamada1 h3{
+	position: relative;
+	margin-bottom: 35px;
+}
+
 /*==========================================*/
 /* CARD */
 /* .about{
@@ -455,3 +461,93 @@ footer p{
 	transition: 0.5s;
 	cursor: pointer;
 }
+
+/*==========================================*/
+/* PORTFOLIO CARD */
+.p-title{
+	font-size: 36px;
+	font-weight: normal;
+	font-family: 'Fredericka the Great', cursive;
+	color: white ;
+	/* color: rgba(0,0,0,0.8); */
+	text-align: center;
+	padding: 12px;
+	border-top: 2px groove black;
+	border-bottom: 2px groove white;
+	/* margin: 5px; */
+	/* background-color:#7FA1CD; */
+	/* background-color: #ccc; */
+	background-image: url('../images/title-banner.jpg');
+}
+
+.portfolio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f1f1f1;
+	font-family: ;
+	/* background: #7FA1CD; */
+}
+
+.portfolio > .container {
+	position: relative;
+	/* width: 1100px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+	/* background-color: red; */
+}
+
+.card-portfolio {
+	position: relative;
+	max-width: 300px;
+	height: 180px;
+	background: #fff;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	flex-direction: column;
+	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+	/* background-color: red; */
+}
+
+.card-portfolio:hover {
+	height: 420px;
+}
+
+.card-portfolio .imgBx {
+	position: relative;
+	width: 260px;
+	height: 173px;
+	top: -60px;
+	left: 4.5px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.card-portfolio .imgBx img {
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.card-portfolio .content {
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.card-portfolio:hover .content {
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}
+
+

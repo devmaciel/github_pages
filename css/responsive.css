@@ -46,7 +46,16 @@
         margin: 0 auto;
     }
 
+    .sobre-mim-desc {
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+
     .left-side img {
         margin-top: 10px;
+    }
+
+    .right-side span {
+        margin-left: 113px;
     }
 }
