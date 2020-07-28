@@ -467,8 +467,8 @@ footer p{
 .p-title{
 	font-size: 36px;
 	font-weight: normal;
-	font-family: 'Fredericka the Great', cursive;
-	color: white ;
+	/* font-family: 'Sora', sans-serif; */
+	color: black ;
 	/* color: rgba(0,0,0,0.8); */
 	text-align: center;
 	padding: 12px;
@@ -478,6 +478,9 @@ footer p{
 	/* background-color:#7FA1CD; */
 	/* background-color: #ccc; */
 	background-image: url('../images/title-banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* background-position: cover; */
 }
 
 .portfolio {
