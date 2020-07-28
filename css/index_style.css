@@ -24,6 +24,8 @@ html,body{
 body{
 	overflow-x: hidden !important;
 	background-color: black;
+	overflow-x: hidden;	
+	-ms-overflow-x:hidden;
 }
 
 .container{
