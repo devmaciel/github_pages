@@ -473,9 +473,8 @@ footer p{
 /*==========================================*/
 /* PORTFOLIO CARD */
 .p-title{
-	font-size: 36px;
+	font-size: 24px;
 	font-weight: normal;
-	/* font-family: 'Sora', sans-serif; */
 	color: black ;
 	/* color: rgba(0,0,0,0.8); */
 	text-align: center;
@@ -492,6 +491,7 @@ footer p{
 }
 
 .portfolio {
+	overflow-x: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;

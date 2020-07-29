@@ -23,6 +23,7 @@
         padding: 0 20px;
         margin: 150px auto;
         text-align: center;
+        width: 98%;
     }
 
     .desktop{display: none;}
