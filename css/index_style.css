@@ -2,46 +2,55 @@
 :root {
 	font-size: 16px;
 	color: white;
-	font-family: 'Sora', sans-serif;
-	--text-primary:#92D44A;
-	--text-secondary:#7FA1CD;
-	--text-card:#2c3e50;
+	font-family: "Sora", sans-serif;
+	--text-primary: #92d44a;
+	--text-secondary: #7fa1cd;
+	--text-card: #2c3e50;
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
 	height: 100%;
 	max-height: 100%;
 	/* background:black; */
 	/* overflow-x: hidden; */
 }
 
-body{
+body {
 	overflow-x: hidden !important;
 	background-color: black;
-	-ms-overflow-x:hidden;
+	-ms-overflow-x: hidden;
 }
 
-.container{
+.container {
 	max-width: 1280px;
-	padding:0 2%;
-	margin:0 auto;
+	padding: 0 2%;
+	margin: 0 auto;
 }
 
-.w50{width: 50%;}
-.left{float: left;}
-.right{float: right;}
+.w50 {
+	width: 50%;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
 
-.clearfix{clear: both;}
+.clearfix {
+	clear: both;
+}
 
 /*==========================================*/
 /* NAV-MENU */
-.mobile{
+.mobile {
 	display: none;
 	width: 100%;
 	text-align: right;
@@ -49,54 +58,63 @@ body{
 	margin-bottom: -20px;
 }
 
-header{
-	padding:15px 0;
+header {
+	padding: 15px 0;
 	background: #111;
-	border-bottom: 1px solid rgba(230,230,230,0.5);
+	border-bottom: 1px solid rgba(230, 230, 230, 0.5);
 	width: 100%;
 }
 
-.logo a{
+.logo a {
 	text-decoration: none;
-	color:var(--text-secondary); 
+	color: var(--text-secondary);
 }
 
-.logo a > i{
+.logo a > i {
 	color: var(--text-primary);
 }
 
-nav{position: relative;}
-nav.desktop ul{list-style-type: none;}
-nav.desktop li{
+nav {
+	position: relative;
+}
+nav.desktop ul {
+	list-style-type: none;
+}
+nav.desktop li {
 	margin: 0 20px;
 	display: inline-block;
 }
 
-nav.desktop a{
+nav.desktop a {
 	/*position: relative;*/
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 
-nav #marker{
-    position: absolute;
-    left: 0;
-    height: 2px;
-    bottom: -2px;
-    width: 0; 
-    background: white;
-    transition: 0.5s;
-    border-radius: 4px;
+nav #marker {
+	position: absolute;
+	left: 0;
+	height: 2px;
+	bottom: -2px;
+	width: 0;
+	background: white;
+	transition: 0.5s;
+	border-radius: 4px;
 }
 
-.botao-menu-mobile{
+nav.desktop li:hover {
+	transition: 0.3s;
+	opacity: 0.6;
+}
+
+.botao-menu-mobile {
 	font-size: 24px;
 	cursor: pointer;
 	color: white;
 }
 
-.mobile ul{
-	top:40px;
+.mobile ul {
+	top: 40px;
 	z-index: 999;
 	position: absolute;
 	left: 0;
@@ -105,38 +123,42 @@ nav #marker{
 	text-align: center;
 }
 
-.mobile li{
+.mobile li {
 	font-weight: 300;
 	width: 100%;
 	max-width: 700px;
 	display: block;
 	background: white;
-	border-bottom:1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 	font-size: 17px;
-	padding:8px 0;
+	padding: 8px 0;
 }
-.mobile li a{
+.mobile li a {
 	display: block;
 	color: #444;
 	text-decoration: none;
 }
 
 body::-webkit-scrollbar {
-width: 0.25rem;
+	width: 0.25rem;
 }
 
 body::-webkit-scrollbar-track {
-background: #1e1e24;
+	background: #1e1e24;
 }
 
 body::-webkit-scrollbar-thumb {
-background: var(--text-primary);
+	background: var(--text-primary);
 }
 
 /*==========================================*/
 /* BANNER */
-.banner-container{width: 100%;height: 100%;max-height: 667px; }
-.bg-banner{
+.banner-container {
+	width: 100%;
+	height: 100%;
+	max-height: 667px;
+}
+.bg-banner {
 	display: block;
 	position: absolute;
 	left: 0;
@@ -144,23 +166,23 @@ background: var(--text-primary);
 	z-index: 1;
 	width: 100%;
 	height: 100%;
-	max-height: 667px; 
+	max-height: 667px;
 	background-size: cover;
 	background-position: center;
 }
 
-.overlay{
+.overlay {
 	position: absolute;
 	left: 0;
 	top: 20;
 	width: 100%;
 	height: 100%;
-	max-height: 667px; 
+	max-height: 667px;
 	z-index: 2;
-	background-color: rgba(0,0,0,0.7); 
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.chamada1{
+.chamada1 {
 	position: relative;
 	z-index: 999;
 	color: white;
@@ -172,20 +194,20 @@ background: var(--text-primary);
 	/*background-color:rgba(20,20,20,1);*/
 }
 
-.chamada1 h2{
+.chamada1 h2 {
 	font-weight: 300;
 	font-size: 60px;
 	color: white;
 	font-weight: normal;
 }
 
-.chamada1 p{
+.chamada1 p {
 	font-size: 15px;
 	color: white;
 	margin-top: 10px;
 }
 
-.chamada1 h3{
+.chamada1 h3 {
 	position: relative;
 	margin-bottom: 35px;
 }
@@ -219,7 +241,7 @@ div.about .social-icons{
 	padding: 100px 40px;
 } */
 
-.sec-card{
+.sec-card {
 	z-index: 3;
 	position: absolute;
 	top: 100px;
@@ -227,14 +249,14 @@ div.about .social-icons{
 	color: black;
 }
 
-.middle{
+.middle {
 	position: relative;
 	/* top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%); */
 }
 
-.card{
+.card {
 	cursor: pointer;
 	width: 300px;
 	height: 380px;
@@ -243,42 +265,43 @@ div.about .social-icons{
 	box-shadow: -6px -21px 201px -36px rgba(163,163,163,1); */
 }
 
-.front, .back{
+.front,
+.back {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 	backface-visibility: hidden;
 	position: absolute;
-	transition: transform .6s linear;
+	transition: transform 0.6s linear;
 }
 
-.front img{
+.front img {
 	height: 100%;
 }
 
-.front{
+.front {
 	transform: perspective(600px) rotateY(0deg);
 }
 
-.back{
+.back {
 	background: #f1f1f1;
 	transform: perspective(600px) rotateY(180deg);
 }
 
-.back-content{
+.back-content {
 	color: var(--text-card);
 	text-align: center;
 	width: 100%;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 }
 
-.sm{
+.sm {
 	margin: 20px 0;
 }
 
-.sm a{
+.sm a {
 	display: inline-flex;
 	width: 40px;
 	height: 40px;
@@ -290,30 +313,30 @@ div.about .social-icons{
 	border-radius: 50%;
 }
 
-.sm a:hover{
+.sm a:hover {
 	background: var(--text-card);
-	color: white;;
+	color: white;
 }
 
-.card:hover > .front{
+.card:hover > .front {
 	transform: perspective(600px) rotateY(-180deg);
 }
 
-.card:hover > .back{
+.card:hover > .back {
 	transform: perspective(600px) rotateY(0deg);
 }
 
 /*==========================================*/
 /* FOOTER */
-footer{
+footer {
 	position: relative;
 	z-index: 4;
 	background-color: black;
 	padding: 15px 0;
-	border-top: 1px solid rgba(230,230,230,0.5);
+	border-top: 1px solid rgba(230, 230, 230, 0.5);
 }
 
-footer p{
+footer p {
 	color: white;
 	text-align: center;
 	font-weight: 300;
@@ -322,11 +345,11 @@ footer p{
 
 /*==========================================*/
 /* SOBRE MIM */
-.sobre-mim{
+.sobre-mim {
 	padding-top: 20px;
 	color: black;
 	background-color: #f1f1f1;
-	background-image: url('../images/bg-sobremim.jpg');
+	background-image: url("../images/bg-sobremim.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
@@ -334,8 +357,10 @@ footer p{
 	align-items: center;
 }
 
-.banner-container2{width: 100%;}
-.bg-banner2{
+.banner-container2 {
+	width: 100%;
+}
+.bg-banner2 {
 	display: block;
 	position: absolute;
 	left: 0;
@@ -343,23 +368,23 @@ footer p{
 	z-index: 1;
 	width: 100%;
 	height: 100%;
-	max-height: 200px; 
+	max-height: 200px;
 	background-size: cover;
 	background-position: center;
 }
 
-.overlay2{
+.overlay2 {
 	position: absolute;
 	left: 0;
 	top: 20;
 	width: 100%;
 	height: 100%;
-	max-height: 200px; 
+	max-height: 200px;
 	z-index: 2;
-	background-color: rgba(0,0,0,0.7); 
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.chamada2{
+.chamada2 {
 	position: relative;
 	z-index: 2;
 	color: white;
@@ -368,16 +393,16 @@ footer p{
 	line-height: 200px;
 }
 
-.chamada2 h2{
+.chamada2 h2 {
 	font-weight: 300;
 	font-size: 66px;
 	color: white;
 	font-weight: normal;
-	font-family: 'Playball', cursive;
+	font-family: "Playball", cursive;
 }
 
 /* SOBRE MIM PERFIL */
-.container2{
+.container2 {
 	position: relative;
 	width: 800px;
 	display: flex;
@@ -408,7 +433,7 @@ footer p{
 	/* margin-top: -100px; */
 	font-size: 20px;
 	font-weight: 600px;
-	color: rgba(0,0,0,0.2);
+	color: rgba(0, 0, 0, 0.2);
 	text-transform: uppercase;
 }
 
@@ -416,8 +441,8 @@ footer p{
 	width: 100%;
 	max-width: 350px;
 	height: 50px;
-	background:#fff;
-	box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.15);
+	background: #fff;
+	box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.15);
 	margin-bottom: 20px;
 	/* margin-left: -100px;
 	margin-bottom: 30px; */
@@ -427,22 +452,22 @@ footer p{
 	padding: 10px 10px;
 	font-size: 20px;
 	font-weight: 700;
-	color: rgba(0,0,0,0.5);
+	color: rgba(0, 0, 0, 0.5);
 	text-transform: uppercase;
 }
 
 .right-side span {
 	display: block;
 	margin-bottom: 20px;
-	width:80px;
-	height:3px;
+	width: 80px;
+	height: 3px;
 	background: #c4313180;
 }
 
 .sobre-mim-desc {
 	font-size: 14px;
 	font-weight: 600;
-	color: rgba(0,0,0,0.8);
+	color: rgba(0, 0, 0, 0.8);
 }
 
 .icons {
@@ -458,23 +483,23 @@ footer p{
 	background: #fff;
 	border-radius: 50%;
 	text-align: center;
-	color:#000;
+	color: #000;
 	font-size: 20px;
 }
 
 .icons .fab:hover {
-	background:#000;
-	color:#fff;
+	background: #000;
+	color: #fff;
 	transition: 0.5s;
 	cursor: pointer;
 }
 
 /*==========================================*/
 /* PORTFOLIO CARD */
-.p-title{
+.p-title {
 	font-size: 24px;
 	font-weight: normal;
-	color: black ;
+	color: black;
 	/* color: rgba(0,0,0,0.8); */
 	text-align: center;
 	padding: 12px;
@@ -483,7 +508,7 @@ footer p{
 	/* margin: 5px; */
 	/* background-color:#7FA1CD; */
 	/* background-color: #ccc; */
-	background-image: url('../images/title-banner.jpg');
+	background-image: url("../images/title-banner.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	/* background-position: cover; */
@@ -499,7 +524,6 @@ footer p{
 	/* font-family: ; */
 	/* background: #7FA1CD; */
 }
-
 
 .portfolio > .container {
 	position: relative;
@@ -520,13 +544,13 @@ footer p{
 	margin: 30px 10px;
 	padding: 20px 15px;
 	flex-direction: column;
-	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+	box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
 	transition: 0.3s ease-in-out;
 	/* background-color: red; */
 }
 
 .card-portfolio:hover {
-	height: 420px;
+	height: 380px;
 }
 
 .card-portfolio .imgBx {
@@ -536,7 +560,7 @@ footer p{
 	top: -60px;
 	left: 4.5px;
 	z-index: 1;
-	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-portfolio .imgBx img {
@@ -555,7 +579,7 @@ footer p{
 	transition: 0.3s ease-in-out;
 }
 
-.card-portfolio .content a{
+.card-portfolio .content a {
 	text-decoration: underline;
 	color: black;
 }
@@ -566,6 +590,3 @@ footer p{
 	margin-top: -40px;
 	transition-delay: 0.3s;
 }
-
-
-
